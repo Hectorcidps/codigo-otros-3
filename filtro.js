@@ -11,15 +11,17 @@ const productos = [
 const li = document.getElementsByName("lista-de-productos")
 const $i = document.querySelector('.input');
 
+// cambiar las variables tipo var a let 
+
 for (let i = 0; i < productos.length; i++) {
-  var d = document.createElement("div")
+  let d = document.createElement("div")
   d.classList.add("producto")
 
-  var ti = document.createElement("p")
+  let ti = document.createElement("p")
   ti.classList.add("titulo")
   ti.textContent = productos[i].nombre
   
-  var imagen = document.createElement("img");
+  let imagen = document.createElement("img");
   imagen.setAttribute('src', productos[i].img);
 
   d.appendChild(ti)
@@ -41,14 +43,14 @@ botonDeFiltro.onclick = function() {
   const productosFiltrados = filtrado(productos, texto );
 
   for (let i = 0; i < productosFiltrados.length; i++) {
-    var d = document.createElement("div")
+    let d = document.createElement("div")
     d.classList.add("producto")
   
-    var ti = document.createElement("p")
+    let ti = document.createElement("p")
     ti.classList.add("titulo")
     ti.textContent = productosFiltrados[i].nombre
     
-    var imagen = document.createElement("img");
+    let imagen = document.createElement("img");
     imagen.setAttribute('src', productosFiltrados[i].img);
   
     d.appendChild(ti)

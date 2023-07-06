@@ -1,4 +1,16 @@
-input {
+/* alinie el texto y los items al centro para mejor visualizacion */
+body{
+  text-align: center;
+  background-color: aqua;
+}
+
+button{
+  background-color: bisque;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+}
+
+.producto {
   width: 500px;
   height: 40px;
   font-size: 18px;
